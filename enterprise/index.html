@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    html, body, iframe {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border: 0;
+    }
+
+    body {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<iframe id="frame"></iframe>
+
+<script>
+  const target = 'https://ghlicense.eastus.cloudapp.azure.com/github/';
+
+  document.getElementById('frame').src =
+    target +
+    window.location.search +
+    window.location.hash;
+</script>
+
+</body>
+</html>
